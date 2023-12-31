@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20231231 18:58:01.212" rpa="false" schemaversion="4">
+<suite id="s1" name="testInput" source="C:\Users\majoonians\kuliah\belajar-robotframework\testInput.robot">
+<test id="s1-t1" name="Buka web" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${web}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231231 18:58:01.797" level="INFO">Opening browser 'chrome' to base url 'https://www.globalsqa.com/samplepagetest/'.</msg>
+<status status="PASS" starttime="20231231 18:58:01.796" endtime="20231231 18:58:15.091"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231231 18:58:15.099" endtime="20231231 18:58:15.383"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>//*[@id="wpcf7-f2598-p2599-o1"]/form/p/span/input</arg>
+<arg>C:\\Users\\majoonians\\kuliah\\belajar-robotframework/IMG-20231123-WA0038.jpg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20231231 18:58:15.399" level="INFO">Sending C:\Users\majoonians\kuliah\belajar-robotframework\IMG-20231123-WA0038.jpg to browser.</msg>
+<status status="PASS" starttime="20231231 18:58:15.399" endtime="20231231 18:58:15.756"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231231 18:58:17.757" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231231 18:58:15.757" endtime="20231231 18:58:17.758"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="g2599-name"]</arg>
+<arg>Aji Santoso</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231231 18:58:17.764" level="INFO">Typing text 'Aji Santoso' into text field '//*[@id="g2599-name"]'.</msg>
+<status status="PASS" starttime="20231231 18:58:17.760" endtime="20231231 18:58:18.092"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="g2599-email"]</arg>
+<arg>aji@getnada.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231231 18:58:18.092" level="INFO">Typing text 'aji@getnada.com' into text field '//*[@id="g2599-email"]'.</msg>
+<status status="PASS" starttime="20231231 18:58:18.092" endtime="20231231 18:58:18.390"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="g2599-website"]</arg>
+<arg>https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Choose%20File</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231231 18:58:18.393" level="INFO">Typing text 'https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Choose%20File' into text field '//*[@id="g2599-website"]'.</msg>
+<status status="PASS" starttime="20231231 18:58:18.391" endtime="20231231 18:58:18.889"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//*[@id="g2599-experienceinyears"]</arg>
+<arg>1-3</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20231231 18:58:18.889" level="INFO">Selecting options from selection list '//*[@id="g2599-experienceinyears"]' by value 1-3.</msg>
+<status status="PASS" starttime="20231231 18:58:18.889" endtime="20231231 18:58:19.133"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>//*[@id="contact-form-2599"]/form/div[5]/label[2]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20231231 18:58:19.137" level="INFO">Selecting checkbox '//*[@id="contact-form-2599"]/form/div[5]/label[2]/input'.</msg>
+<status status="PASS" starttime="20231231 18:58:19.135" endtime="20231231 18:58:19.487"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>g2599-education</arg>
+<arg>Post Graduate</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20231231 18:58:19.490" level="INFO">Selecting 'Post Graduate' from radio button 'g2599-education'.</msg>
+<status status="PASS" starttime="20231231 18:58:19.490" endtime="20231231 18:58:19.705"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="contact-form-2599"]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231231 18:58:19.708" level="INFO">Clicking button '//*[@id="contact-form-2599"]/form/button'.</msg>
+<status status="PASS" starttime="20231231 18:58:19.707" endtime="20231231 18:58:19.988"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20231231 18:58:19.989" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20231231 18:58:19.989" endtime="20231231 18:58:20.013"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231231 18:58:22.022" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231231 18:58:20.019" endtime="20231231 18:58:22.022"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20231231 18:58:22.022" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20231231 18:58:22.022" endtime="20231231 18:58:22.104"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231231 18:58:24.128" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231231 18:58:22.126" endtime="20231231 18:58:24.128"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="contact-form-comment-g2599-comment"]</arg>
+<arg>INI LAGI BELAJAR TESTING 123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231231 18:58:24.143" level="INFO">Typing text 'INI LAGI BELAJAR TESTING 123' into text field '//*[@id="contact-form-comment-g2599-comment"]'.</msg>
+<status status="PASS" starttime="20231231 18:58:24.141" endtime="20231231 18:58:24.550"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231231 18:58:26.553" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231231 18:58:24.551" endtime="20231231 18:58:26.553"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="contact-form-2599"]/form/p[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231231 18:58:26.553" level="INFO">Clicking button '//*[@id="contact-form-2599"]/form/p[3]/button'.</msg>
+<status status="PASS" starttime="20231231 18:58:26.553" endtime="20231231 18:58:36.851"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231231 18:58:41.899" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231231 18:58:36.851" endtime="20231231 18:58:41.899"/>
+</kw>
+<status status="PASS" starttime="20231231 18:58:01.795" endtime="20231231 18:58:41.975"/>
+</test>
+<status status="PASS" starttime="20231231 18:58:01.216" endtime="20231231 18:58:42.147"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="testInput">testInput</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
